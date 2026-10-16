@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Support — Margin Tarot</title>
+<meta name="description" content="Support and frequently asked questions for Margin Tarot." />
+<style>
+  :root {
+    --bg: #0d0a1a;
+    --bg-soft: #15112a;
+    --card: #1c1740;
+    --accent: #b89cff;
+    --accent-2: #f4c8a4;
+    --text: #ece8f7;
+    --muted: #a39cb8;
+    --border: #2a244d;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: radial-gradient(ellipse at top, #1a1442 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .logo {
+    font-size: 14px;
+    letter-spacing: 0.4em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 16px;
+  }
+  section {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 28px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--accent);
+    margin-bottom: 14px;
+    letter-spacing: 0.02em;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--accent-2);
+    margin: 18px 0 8px;
+  }
+  p { color: var(--text); margin-bottom: 14px; }
+  p:last-child { margin-bottom: 0; }
+  .faq details {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 14px 18px;
+    transition: border-color 0.2s;
+  }
+  .faq details[open] { border-color: var(--accent); }
+  .faq summary {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after {
+    content: "+";
+    color: var(--accent);
+    font-size: 20px;
+    transition: transform 0.2s;
+  }
+  .faq details[open] summary::after {
+    transform: rotate(45deg);
+  }
+  .faq p {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  .contact {
+    background: linear-gradient(135deg, var(--card) 0%, var(--bg-soft) 100%);
+    border: 1px solid var(--accent);
+    text-align: center;
+  }
+  .contact h2 { color: var(--accent-2); }
+  .email {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 28px;
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .email:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(184, 156, 255, 0.35);
+  }
+  .response-time {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 6px 14px;
+    background: rgba(244, 200, 164, 0.12);
+    color: var(--accent-2);
+    border-radius: 999px;
+    font-size: 13px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 48px;
+  }
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 0 12px;
+  }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 520px) {
+    h1 { font-size: 28px; }
+    .container { padding: 32px 18px 64px; }
+    section { padding: 22px 18px; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">MARGIN TAROT</div>
+      <h1>Support</h1>
+      <p class="subtitle">We're here to help you get the most from your practice.</p>
+    </header>
+
+    <section>
+      <h2>Getting Started</h2>
+      <p>Welcome to Margin Tarot. The app is designed to be quiet and intuitive, but here are a few tips to help you begin.</p>
+      <h3>Your first reading</h3>
+      <p>Open the Reading tab, choose a spread, and write the question you want to sit with. Tap the deck to shuffle, then draw your cards one at a time. Each card invites a moment of reflection before you reveal the next.</p>
+      <h3>The daily card</h3>
+      <p>Every day, the Home tab shows a single rotating card — a gentle point of attention to begin your morning. The card changes automatically at midnight.</p>
+      <h3>Building your custom deck</h3>
+      <p>Use the Custom tab to bring your own physical deck into the app. Tap the plus button to capture a card with the camera or import an image from your Photos library. Give it a name and an optional note, and it becomes part of your private collection.</p>
+    </section>
+
+    <section>
+      <h2>Features Reference</h2>
+      <h3>Library</h3>
+      <p>Browse all 78 cards of the Major and Minor Arcana. Filter by suit, search by name, and tap any card to study its upright and reversed meanings, keywords, astrological association, symbol description, and affirmation.</p>
+      <h3>Spreads</h3>
+      <p>Five spreads are included: Single card, Three-card line (past / present / future), Five-card cross, Ten-card Celtic Cross, and Love spread.</p>
+      <h3>Journal</h3>
+      <p>Every reading you save becomes a journal entry, including the question you wrote, the cards drawn, and any reflection you added. Revisit them whenever you want to see your journey over time.</p>
+      <h3>Learn</h3>
+      <p>An accessible guide to the four suits (Wands, Cups, Swords, Pentacles), the Major Arcana, and each spread layout — useful for both beginners and seasoned readers.</p>
+      <h3>Settings</h3>
+      <p>Adjust preferences and clear all locally stored data at any time.</p>
+    </section>
+
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <details>
+        <summary>Is my data private?</summary>
+        <p>Yes. Margin Tarot does not collect, transmit, or sell any personal data. All of your readings, journal entries, and custom cards are stored only on your device. There is no account, no sign-in, and no remote server holding your information.</p>
+      </details>
+
+      <details>
+        <summary>Can I use my own physical deck?</summary>
+        <p>Yes. Open the Custom tab and tap the plus button. You can either photograph a card with the camera or import an image from your Photos library. Give it a name, optionally add a note, and it joins your private collection.</p>
+      </details>
+
+      <details>
+        <summary>How do I save a reading?</summary>
+        <p>After completing a reading, tap the save icon and add an optional reflection. Saved readings appear in your Journal, where you can revisit them any time.</p>
+      </details>
+
+      <details>
+        <summary>How do I clear all my data?</summary>
+        <p>Open Settings inside the app and choose "Clear All Data". All readings, journal entries, and custom cards will be removed from your iPhone. You can also delete the app to remove everything.</p>
+      </details>
+
+      <details>
+        <summary>Why is the daily card the same as yesterday?</summary>
+        <p>The daily card rotates once per day. If your device clock or timezone is unusual, the rotation may seem delayed. Closing and reopening the app, or restarting your iPhone, will refresh it.</p>
+      </details>
+
+      <details>
+        <summary>Why was I asked for camera or photo access?</summary>
+        <p>The app only requests camera access when you choose to photograph a custom card, and photo library access only when you choose to import an image or save a reading snapshot. You can decline these permissions and the rest of the app will continue to work normally.</p>
+      </details>
+
+      <details>
+        <summary>Does Margin Tarot require an internet connection?</summary>
+        <p>No. The app is fully functional offline. Because no data leaves your device, you can use Margin Tarot anywhere, anytime, with no network required.</p>
+      </details>
+
+      <details>
+        <summary>Is this app for predicting the future?</summary>
+        <p>Margin Tarot is a tool for reflection, not prediction. The cards do not decide for you; they sit with you while you do. Treat readings as invitations to notice, not forecasts to obey.</p>
+      </details>
+
+      <details>
+        <summary>How do I report a bug or request a feature?</summary>
+        <p>Please email <a href="mailto:mohrdonald13122000@gmail.com" style="color: var(--accent);">mohrdonald13122000@gmail.com</a> with a description of what you experienced and, if possible, your iOS version and iPhone model.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>Troubleshooting</h2>
+      <h3>The app feels slow</h3>
+      <p>Close and reopen the app. If you have a very large custom deck, removing cards you no longer use can also help.</p>
+      <h3>A card image isn't loading</h3>
+      <p>For custom cards, try re-importing the image. For library cards, please report the issue with the card name so we can investigate.</p>
+      <h3>I lost my data</h3>
+      <p>Margin Tarot stores everything on your device only. If you have reinstalled the app, restored your iPhone from a backup, or cleared app data, previously saved content cannot be recovered — there is no remote copy.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, encounter an issue, or would like to share feedback, we'd love to hear from you.</p>
+      <a class="email" href="mailto:mohrdonald13122000@gmail.com">mohrdonald13122000@gmail.com</a>
+      <div class="response-time">Typical reply within 48 hours</div>
+    </section>
+
+    <footer>
+      <p>© 2026 Margin Tarot</p>
+      <p>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+        <a href="terms.html">Terms of Use</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
